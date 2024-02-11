@@ -13,7 +13,7 @@ export class SignUpDto {
   @IsEmail()
   email: string;
 
-  @ApiProperty({ example: '1234' })
+  @ApiProperty({ example: 'Asf3&msj' })
   @IsString()
   @IsNotEmpty()
   @MinLength(8, { message: 'Пароль должен содержать минимум 8 символов' })
