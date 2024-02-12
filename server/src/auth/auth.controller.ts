@@ -9,7 +9,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { Response } from 'express';
-import { ApiCreatedResponse, ApiOkResponse } from '@nestjs/swagger';
+import { ApiCreatedResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { SignUpDto } from './dto/signUp.dto';
 import { SignInDto } from './dto/signIn.dto';
 import { GetSessionInfoDto } from './dto/getSessionInfo.dto';
@@ -18,6 +18,7 @@ import { CookieService } from './cookie.service';
 import { AuthGuard } from './auth.guard';
 import { SessionInfo } from './session-info.decorator';
 
+@ApiTags('auth')
 @Controller('auth')
 export class AuthController {
   constructor(

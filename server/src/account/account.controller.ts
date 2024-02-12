@@ -5,7 +5,9 @@ import { GetAccountDto } from './dto/getAccount.dto';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { SessionInfo } from 'src/auth/session-info.decorator';
 import { GetSessionInfoDto } from 'src/auth/dto/getSessionInfo.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('account')
 @Controller('account')
 @UseGuards(AuthGuard)
 export class AccountController {

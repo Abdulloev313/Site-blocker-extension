@@ -11,7 +11,7 @@ import {
 } from '@nestjs/common';
 import { BlockListDto } from './dto/blockList.dto';
 import { AddBlockItemDto } from './dto/addBlockItem.dto';
-import { ApiCreatedResponse, ApiOkResponse } from '@nestjs/swagger';
+import { ApiCreatedResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { BlockListQueryDto } from './dto/blockListQuery.dto';
 import { AuthGuard } from 'src/auth/auth.guard';
 import { SessionInfo } from 'src/auth/session-info.decorator';
@@ -19,6 +19,7 @@ import { GetSessionInfoDto } from 'src/auth/dto/getSessionInfo.dto';
 import { BlockListService } from './block-list.service';
 import { BlockItemDto } from './dto/BlockItem.dto';
 
+@ApiTags('block-list')
 @Controller('block-list')
 @UseGuards(AuthGuard)
 export class BlockListController {
