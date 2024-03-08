@@ -8,7 +8,7 @@ import {
 } from 'class-validator';
 
 export class SignUpDto {
-  @ApiProperty({ example: 'test@agmail.com' })
+  @ApiProperty({ example: 'test@gmail.com' })
   @IsString()
   @IsEmail()
   email: string;
