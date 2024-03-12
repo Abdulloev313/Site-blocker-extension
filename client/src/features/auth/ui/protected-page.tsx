@@ -11,7 +11,7 @@ export function protectedPage<P>(Component: (props: P) => ReactElement) {
     const { isError, isLoading } = useSessionQuery();
 
     if (isLoading) {
-      return <UiPageSpinner></UiPageSpinner>;
+      return <UiPageSpinner />;
     }
 
     if (isError) {
