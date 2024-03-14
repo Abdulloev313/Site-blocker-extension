@@ -1,4 +1,5 @@
-module.exports = {
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {
   main: {
     input: "./src/shared/api/schema.yaml",
     output: {
