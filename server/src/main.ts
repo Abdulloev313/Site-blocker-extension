@@ -15,6 +15,13 @@ async function bootstrap() {
   );
 
   app.use(cookieParser());
+  app.enableCors({
+    origin: [
+      'http://localhost:3000',
+      'chrome-extension://jcdopaegiijkampjpdiddojahjpcglkd',
+    ],
+    credentials: true,
+  });
 
   const config = new DocumentBuilder().setTitle('Block list').build();
   const document = SwaggerModule.createDocument(app, config);
