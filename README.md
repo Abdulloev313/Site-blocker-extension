@@ -62,11 +62,19 @@ npm install
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-DATABASE_URL=your_db_url
+DATABASE_URL=your_db_url (use postgresql)
 JWT_SECRET=your_jwt_secret
 ```
 
 Replace the placeholder values with your actual credentials
+
+**Migrate Db tables**
+
+run in ./server folder this command
+
+```bash
+npx prisma migrate dev --name init
+```
 
 **Running the Project**
 
