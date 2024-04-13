@@ -13,7 +13,6 @@ export type BlockListControllerGetListParams = {
 export type AddBlockItemDtoType =
   (typeof AddBlockItemDtoType)[keyof typeof AddBlockItemDtoType];
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const AddBlockItemDtoType = {
   KeyWord: "KeyWord",
   Website: "Website",
@@ -27,7 +26,6 @@ export interface AddBlockItemDto {
 export type BlockItemDtoType =
   (typeof BlockItemDtoType)[keyof typeof BlockItemDtoType];
 
-// eslint-disable-next-line @typescript-eslint/no-redeclare
 export const BlockItemDtoType = {
   KeyWord: "KeyWord",
   Website: "Website",
