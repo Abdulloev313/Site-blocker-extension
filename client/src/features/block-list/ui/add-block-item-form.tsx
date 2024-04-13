@@ -4,10 +4,7 @@ import { UiTextField } from "@/shared/ui/ui-text-field";
 import { UiButton } from "@/shared/ui/ui-button";
 import { AddBlockItemDtoType } from "@/shared/api/generated";
 
-const typeOptions = [
-  { label: "WebSite", value: AddBlockItemDtoType.Website },
-  { label: "KeyWord", value: AddBlockItemDtoType.KeyWord },
-];
+const typeOptions = [{ label: "WebSite", value: AddBlockItemDtoType.Website }];
 
 export function AddBlockItemForm() {
   const { handleSubmit, isLoading, register, type } = useAddBlockItemForm();
@@ -24,8 +21,7 @@ export function AddBlockItemForm() {
       <UiTextField
         className="grow"
         inputProps={{
-          placeholder:
-            type === "KeyWord" ? "Enter Key Word..." : "Enter WebSite",
+          placeholder: type === "Website" ? "Enter WebSite" : "Enter WebSite",
           ...register("data"),
         }}
       />
