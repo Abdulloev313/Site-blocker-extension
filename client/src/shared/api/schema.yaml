@@ -148,11 +148,9 @@ components:
       properties:
         email:
           type: string
-          example: test@agmail.com
+          example: test@gmail.com
         password:
           type: string
-          minLength: 8
-          pattern: /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/
           example: Asf3&msj
       required:
         - email
@@ -162,11 +160,9 @@ components:
       properties:
         email:
           type: string
-          example: test@agmail.com
+          example: test@gmail.com
         password:
           type: string
-          minLength: 8
-          pattern: /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/
           example: Asf3&msj
       required:
         - email

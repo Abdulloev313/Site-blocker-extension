@@ -1,5 +1,3 @@
-import { SignUpForm } from "@/features/auth";
-import { UiHeader } from "../ui-header";
 import { ReactNode } from "react";
 
 export function UiFormPageLayout({

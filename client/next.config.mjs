@@ -6,10 +6,11 @@ const nextConfig = {
       {
         source: "/api/:path*",
         destination:
-          `${process.env.SERVER_URL}/:path*` || "http://localhost:8001/:path*",
+          `${process.env.NEXT_PUBLIC_SERVER_URL}/:path*` ||
+          "http://localhost:8001/:path*",
       },
     ];
   },
 };
-console.log(nextConfig.rewrites());
+
 export default nextConfig;

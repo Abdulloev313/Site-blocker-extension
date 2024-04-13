@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
 
 const apiInstance = axios.create({
-  baseURL: process.env.SERVER_URL || "http://localhost:8001",
+  baseURL: process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:8001",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json"
