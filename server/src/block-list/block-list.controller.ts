@@ -17,7 +17,7 @@ import { AuthGuard } from 'src/auth/auth.guard';
 import { SessionInfo } from 'src/auth/session-info.decorator';
 import { GetSessionInfoDto } from 'src/auth/dto/getSessionInfo.dto';
 import { BlockListService } from './block-list.service';
-import { BlockItemDto } from './dto/BlockItem.dto';
+import { BlockItemDto } from './dto/blockItem.dto';
 
 @ApiTags('block-list')
 @Controller('block-list')

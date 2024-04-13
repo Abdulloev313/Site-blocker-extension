@@ -1,5 +1,5 @@
 import { IsNumber } from 'class-validator';
-import { BlockItemDto } from './BlockItem.dto';
+import { BlockItemDto } from './blockItem.dto';
 
 export class BlockListDto {
   @IsNumber()
