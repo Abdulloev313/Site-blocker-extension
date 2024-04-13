@@ -18,7 +18,8 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      'chrome-extension://jcdopaegiijkampjpdiddojahjpcglkd',
+      `chrome-extension://${process.env.CHROME_EXTENSION_ID}`,
+      'https://site-blocker-extension-production.up.railway.app',
     ],
     credentials: true,
   });

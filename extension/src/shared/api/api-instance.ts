@@ -1,6 +1,6 @@
 // custom-instance.ts
 
-const baseURL = 'http://localhost:8001'; // use your own URL here or environment variable
+const baseURL = process.env.SERVER_URL || 'http://localhost:8001'; // use your own URL here or environment variable
 
 class ApiError extends Error {
   constructor(public data: unknown) {
