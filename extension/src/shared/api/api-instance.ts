@@ -1,6 +1,6 @@
 // custom-instance.ts
 
-const baseURL = import.meta.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:8001'; // use your own URL here or environment variable
+const baseURL = import.meta.env.VITE_SERVER_URL || 'http://localhost:8001'; // use your own URL here or environment variable
 
 class ApiError extends Error {
   constructor(public data: unknown) {
