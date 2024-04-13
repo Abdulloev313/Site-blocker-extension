@@ -80,5 +80,6 @@ Open [chrome://extensions/](chrome://extensions/) in your Chrome browser
 Turn on dev mode on right side
 And click on Load Unpacked and find ./extensions/dist file and open it
 Finally you can panage the extension from extension bar in browser
+```
 
 Open [http://localhost:3000/](http://localhost:3000/) in your browser to view the project.
