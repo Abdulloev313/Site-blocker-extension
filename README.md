@@ -64,6 +64,7 @@ Create a new file named `.env` in the root of your project and add the following
 ```env
 DATABASE_URL=your_db_url (use postgresql)
 JWT_SECRET=your_jwt_secret
+PORT=your-port
 ```
 
 Replace the placeholder values with your actual credentials
