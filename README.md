@@ -59,12 +59,25 @@ npm install
 
 **Set Up Environment Variables**
 
-Create a new file named `.env` in the root of your project and add the following content:
+Create a new file named `.env` in the server folder of your project and add the following content:
 
 ```env
 DATABASE_URL=your_db_url (use postgresql)
 JWT_SECRET=your_jwt_secret
 PORT=your-port
+CHROME_EXTENSION_ID=your-extension-id
+```
+Create a new file named `.env.local` in the client folder of your project and add the following content:
+
+```env
+NEXT_PUBLIC_SERVER_URL=your-server-url
+```
+Create a new file named `.env` in the extension folder of your project and add the following content:
+
+```env
+VITE_SERVER_URL=your-server-url
+VITE_ADMIN_URL=your-admin-panel-url
+VITE_ADMIN_SING_IN_URL=your-admin-panel--sign-in-url
 ```
 
 Replace the placeholder values with your actual credentials
