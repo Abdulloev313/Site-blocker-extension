@@ -72,7 +72,7 @@ Create a new file named `.env.local` in the client folder of your project and ad
 ```env
 NEXT_PUBLIC_SERVER_URL=your-server-url
 ```
-Create a new file named `.env` in the extension folder of your project and add the following content:
+Create a new file named `.env.local` in the extension folder of your project and add the following content:
 
 ```env
 VITE_SERVER_URL=your-server-url
